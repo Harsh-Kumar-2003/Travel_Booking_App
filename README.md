@@ -145,7 +145,7 @@ User Management: Manage user accounts and permissions
 
 
 ## 🗂️ Project Structure
-
+```
 travel-booking-app/
 ├── bookings/
 │   ├── migrations/
@@ -170,7 +170,7 @@ travel-booking-app/
 ├── manage.py
 ├── requirements.txt
 └── README.md
-
+```
 
 
 ## 🚀 Deployment
@@ -229,6 +229,7 @@ python manage.py test
 
 ## 📝 API Endpoints
 ### Endpoint	Method	Description
+```
 /	GET	Home page
 /accounts/login/	GET/POST	User login
 /accounts/signup/	GET/POST	User registration
@@ -237,6 +238,7 @@ python manage.py test
 /book/<travel_id>/	GET/POST	Book travel option
 /my-bookings/	GET	View user bookings
 /cancel-booking/<booking_id>/	POST	Cancel booking
+```
 
 
 ## 🤝 Contributing
