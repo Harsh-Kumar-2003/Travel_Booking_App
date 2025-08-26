@@ -147,29 +147,29 @@ User Management: Manage user accounts and permissions
 ## 🗂️ Project Structure
 
 travel-booking-app/
-├── bookings/                 # Main application
-│   ├── migrations/          # Database migrations
-│   ├── templates/           # HTML templates
-│   │   ├── bookings/        # App-specific templates
-│   │   └── registration/    # Auth templates
+├── bookings/
+│   ├── migrations/
+│   ├── templates/
+│   │   ├── bookings/
+│   │   └── registration/
 │   ├── __init__.py
-│   ├── admin.py            # Admin panel configuration
+│   ├── admin.py
 │   ├── apps.py
-│   ├── forms.py            # Booking form
-│   ├── models.py           # Database models
-│   ├── tests.py            # Unit tests
-│   ├── urls.py             # App URL routes
-│   └── views.py            # Application logic
-├── travel_booking/          # Project settings
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── travel_booking/
 │   ├── __init__.py
-│   ├── settings.py         # Project configuration
-│   ├── urls.py             # Main URL routes
+│   ├── settings.py
+│   ├── urls.py
 │   └── wsgi.py
-├── venv/                   # Virtual environment (ignored in git)
-├── .gitignore             # Git ignore rules
-├── manage.py              # Django management script
-├── requirements.txt       # Python dependencies
-└── README.md              # This file
+├── venv/
+├── .gitignore
+├── manage.py
+├── requirements.txt
+└── README.md
 
 
 
