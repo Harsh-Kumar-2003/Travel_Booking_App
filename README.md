@@ -215,7 +215,7 @@ A Django-based web application for booking travel options (flights, trains, buse
 
 
 
-    📝 API Endpoints
+## 📝 API Endpoints
     Endpoint	Method	Description
     /	GET	Home page
     /accounts/login/	GET/POST	User login
