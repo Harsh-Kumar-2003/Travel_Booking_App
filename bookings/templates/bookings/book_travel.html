@@ -1,0 +1,31 @@
+{% extends 'bookings/base.html' %}
+{% load humanize %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2>Book Travel</h2>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ travel_option.get_type_display }}</h5>
+                <p class="card-text">
+                    <strong>From:</strong> {{ travel_option.source }}<br>
+                    <strong>To:</strong> {{ travel_option.destination }}<br>
+                    <strong>Departure:</strong> {{ travel_option.departure_time }}<br>
+                    <strong>Price per seat:</strong> ₹{{ travel_option.price|intcomma }}
+                </p>
+            </div>
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="{{ form.number_of_seats.id_for_label }}" class="form-label">Number of Seats</label>
+                {{ form.number_of_seats }}
+            </div>
+            <button type="submit" class="btn btn-primary">Confirm Booking</button>
+            <a href="{% url 'bookings:travel_list' %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
